@@ -340,7 +340,7 @@ def submit_list(request):
     teacher = request.user.Teacher
     return render(request,'classroom/submit_list.html',{'teacher':teacher})
 
-##################################################################################################
+############################################################################################
 
 @login_required
 def change_password(request):
@@ -359,4 +359,3 @@ def change_password(request):
         args = {'form':form}
         return render(request,'classroom/change_password.html',args)
 
- 

@@ -101,4 +101,3 @@ class SubmitAssignment(models.Model):
         ordering = ['-created_at']
     
     
-    #d
