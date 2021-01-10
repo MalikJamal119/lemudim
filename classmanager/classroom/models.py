@@ -40,10 +40,9 @@ class Teacher(models.Model):
     money_per_hour = models.CharField(max_length=250)
     teacher_profile_pic = models.ImageField(upload_to="classroom/teacher_profile_pic", blank=True)
     class_students = models.ManyToManyField(Student, through="StudentsInClass")
-    rate=models.IntegerField()
     description = models.TextField()
-    payment_way=models.CharField(max_length=250)
-    schedule=models.CharField(max_length=250)
+    payment_way = models.CharField(max_length=250)
+    schedule = models.CharField(max_length=250)
 
     def get_absolute_url(self):
         return reverse('classroom:teacher_detail', kwargs={'pk': self.pk})

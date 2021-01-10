@@ -18,7 +18,7 @@ class UserForm(UserCreationForm):
 class TeacherProfileForm(forms.ModelForm):
     class Meta():
         model = Teacher
-        fields = ['name', 'subject_name', 'phone', 'email', 'money_per_hour', 'description', 'rate', 'payment_way',
+        fields = ['name', 'subject_name', 'phone', 'email', 'money_per_hour', 'description', 'payment_way',
                   'schedule']
         widgets = {
             'name': forms.TextInput(attrs={'class': 'answer'}),
